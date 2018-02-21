@@ -23,8 +23,8 @@ class LatestMovieReviewsContainer extends React.Component {
   render() {
     return (
       <div className="latest-movie-reviews">
+        <p>latest</p>
         {this.state.reviews.map(review => {
-          console.log(review);
           return (
             <MovieReviews
               title={review["display_title"]}

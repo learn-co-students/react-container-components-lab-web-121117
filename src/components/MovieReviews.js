@@ -18,4 +18,10 @@ class MovieReviews extends React.Component {
   }
 }
 
+MovieReviews.defaultProps = {
+  title: "",
+  summary: "",
+  linkText: ""
+};
+
 export default MovieReviews;
