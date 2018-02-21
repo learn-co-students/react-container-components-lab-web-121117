@@ -26,7 +26,7 @@ export default class SearchMovieReviewsContainer extends Component {
  handleSubmit = event => {
    event.preventDefault()
 
-   fetch(URL.concat(this.state.search))
+   fetch(URL.concat(this.state.searchTerm))
      .then(response => response.json())
      .then(json => this.setState({ reviews: json.results }))
  }
